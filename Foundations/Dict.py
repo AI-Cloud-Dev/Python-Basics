@@ -92,3 +92,11 @@ while True:
     if repeat == "n":
         print("Goodbye!")
         break        
+    
+    
+ # ── Dicts ─────────────────────────────────────────────────
+user = {"id": 1, "name": "Arjun", "roles": ["admin"]}
+user["email"] = "a@b.com"         # add key
+name = user.get("name", "unknown") # safe access with default
+for k, v in user.items():
+    print(f"{k}: {v}")

@@ -20,3 +20,11 @@ any_access = group_a.union(group_b)
 print(both_access_mem)
 print(only_building_access)
 print(any_access)
+
+
+# ── Sets — O(1) lookup, unique values ─────────────────────
+a_set = {1, 2, 3, 4}
+b_set = {3, 4, 5, 6}
+print(a_set & b_set)   # intersection {3, 4}
+print(a_set | b_set)   # union {1,2,3,4,5,6}
+print(a_set - b_set)   # difference {1, 2}
