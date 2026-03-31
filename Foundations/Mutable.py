@@ -28,12 +28,16 @@ def add_item(item, my_list=[]):
     my_list.append(item)
     print(my_list)
     return my_list
-add_item(4)
-add_item(5)
+add_item(4) # first call
+add_item(5)# second call mutable because of my_list =[] not None
 
 # Mutable
 def add_item(item, my_list=None):
     if my_list is None:
-        my_list = []
-        print(my_list)
+        my_list = [] # create a NEW list only when needed
+    my_list.append(item)
+    print(my_list)
+    return my_list
+    
 add_item(4, [1, 2, 3])
+add_item(5)# creates new set not mutable because the list was pointed to None
