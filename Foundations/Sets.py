@@ -28,3 +28,6 @@ b_set = {3, 4, 5, 6}
 print(a_set & b_set)   # intersection {3, 4}
 print(a_set | b_set)   # union {1,2,3,4,5,6}
 print(a_set - b_set)   # difference {1, 2}
+
+s = {1,2,3}
+print(2 in s) #Fast 

@@ -10,3 +10,8 @@ except TypeError as e:
 
 print(f"Latitude: {lat}")
 print(f"Longitude: {lon}")
+
+# ── Tuples — immutable, hashable (can be dict key) ────────
+point = (10.5, 20.3)
+x, y = point   # tuple unpacking
+coords = {(0,0): "origin", (1,0): "right"}
